@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các số chia hết cho 3 trong 1 mảng</title>
+</head>
+<body>
+<!--1.Tong cac so chia het cho 3 trong mang-->
+<!--<script>-->
+<!--    function checkSum(arr) {-->
+<!--        let sum3 = 0;-->
+<!--        for (let i = 0; i < arr.length; i++) {-->
+<!--            if (arr[i] % 3 === 0) {-->
+<!--                sum3 += arr[i];-->
+
+<!--            }-->
+<!--        }-->
+<!--        return sum3;-->
+<!--    }-->
+<!--    checkSum()-->
+
+<!--</script>-->
+<script> //tim so nho nhat chia het cho 3
+    function min3Check(arr){
+        let min=arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]%3===0){
+                if (arr[i]<=min){
+                    arr[i]=min;
+                }return arr[i];
+            }
+        }
+
+    }
+    min3Check()
+</script>
+</body>
+</html>
